@@ -1,0 +1,6 @@
+{
+  "name": "Katalog Dekranasda Manggarai",
+  "description": "Website katalog digital dan pusat promosi produk kerajinan khas daerah binaan Dekranasda Kabupaten Manggarai, Nusa Tenggara Timur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

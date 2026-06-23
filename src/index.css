@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-maroon-50: #fbf2f2;
+  --color-maroon-100: #f6e3e4;
+  --color-maroon-200: #eeccd0;
+  --color-maroon-500: #800020; /* Burgundy/Maroon classic */
+  --color-maroon-600: #6b021a;
+  --color-maroon-700: #570014;
+  --color-maroon-800: #42000c;
+  --color-maroon-900: #2d0006;
+  --color-gold-400: #f6c85c;
+  --color-gold-500: #e5b02a;
+  --color-gold-600: #c2911b;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-accent: "Space Grotesk", sans-serif;
+}
+
+@layer utilities {
+  .bg-songke-pattern {
+    background-color: #2d0006;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z' fill='none' stroke='%23e5b02a' stroke-width='0.75' opacity='0.15'/%3E%3Cpath d='M30 10 L50 30 L30 50 L10 30 Z' fill='none' stroke='%23800020' stroke-width='0.5' opacity='0.2'/%3E%3Ccircle cx='30' cy='30' r='3' fill='%23e5b02a' opacity='0.25'/%3E%3Cpath d='M0 0 L10 10 M60 0 L50 10 M0 60 L10 50 M60 60 L50 50' stroke='%23e5b02a' stroke-width='0.5' opacity='0.1'/%3E%3C/svg%3E");
+  }
+  .bg-songke-light {
+    background-color: #fbf2f2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M60 0 L120 60 L60 120 L0 60 Z' fill='none' stroke='%23800020' stroke-width='0.5' opacity='0.04'/%3E%3Cpath d='M60 20 L100 60 L60 100 L20 60 Z' fill='none' stroke='%23e5b02a' stroke-width='0.5' opacity='0.06'/%3E%3Ccircle cx='60' cy='60' r='2' fill='%23800020' opacity='0.08'/%3E%3C/svg%3E");
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #eeccd0;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #800020;
+}
+
